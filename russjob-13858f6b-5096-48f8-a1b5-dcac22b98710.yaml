@@ -1,9 +1,5 @@
-- context:
-    options:
-      option:
-      - {}
-  defaultTab: summary
-  description<cdata>: |-
+- defaultTab: summary
+  description: |-
     asdf asdf asdf
     asdfasdf sdf
   executionEnabled: true
@@ -11,11 +7,20 @@
   loglevel: INFO
   name: russjob
   nodeFilterEditable: false
+  options:
+  - delimiter: ','
+    description: env desc
+    enforced: true
+    multivalued: true
+    name: environment
+    required: true
+    valuesUrl: http://www.google.com
   scheduleEnabled: true
   sequence:
-    command:
+    commands:
     - description: russ step 1
-      script<cdata>: hostname
-      scriptargs: null
+      script: hostname
+    keepgoing: false
+    strategy: sequential
   uuid: 13858f6b-5096-48f8-a1b5-dcac22b98710
 
