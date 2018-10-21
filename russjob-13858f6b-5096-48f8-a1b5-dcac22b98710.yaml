@@ -1,0 +1,21 @@
+- context:
+    options:
+      option:
+      - {}
+  defaultTab: summary
+  description<cdata>: |-
+    asdf asdf asdf
+    asdfasdf sdf
+  executionEnabled: true
+  id: 13858f6b-5096-48f8-a1b5-dcac22b98710
+  loglevel: INFO
+  name: russjob
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    command:
+    - description: russ step 1
+      script<cdata>: hostname
+      scriptargs: null
+  uuid: 13858f6b-5096-48f8-a1b5-dcac22b98710
+
